@@ -14,7 +14,7 @@ public class Filter {
     public static Flight filter1(List<Flight> flight) {
         List<Segment> segments = new ArrayList<>();
         for (Flight fly : flight) {
-            for (int i = 0; i < fly.getSegments().size()-2; i+=2) {
+            for (int i = 0; i < (fly.getSegments().size()-2); i+=2) {
                 if (fly.getSegments().get(i).getDepartureDate().isBefore(fly.getSegments().get(i + 1).getArrivalDate())) {
                     segments.add(new Segment(fly.getSegments().get(i+1).getDepartureDate(), fly.getSegments().get(i).getArrivalDate()));
                 }
@@ -27,13 +27,30 @@ public class Filter {
     public static Flight filter2(List<Flight> flight) {
         List<Segment> segments = new ArrayList<>();
         for (Flight fly : flight) {
-            for (int i = 0; i < fly.getSegments().size() - 1; i ++) {
+            for (int i = 0; i < fly.getSegments().size()-1; i++) {
                 if (fly.getSegments().get(i).getArrivalDate().plusHours(2).isBefore(fly.getSegments().get(i + 1).getDepartureDate())) {
                     System.out.println("общее время, проведённое на земле превышает два часа");
-                    segments.add(new Segment(fly.getSegments().get(i).getDepartureDate(), fly.getSegments().get(i + 1).getArrivalDate()));
+                    segments.add(new Segment(fly.getSegments().get(i+1).getDepartureDate(), fly.getSegments().get(i).getArrivalDate()));
                 }
             }
         }
+        return new Flight(segments);
+    }
+
+    public static Flight filter3(List<Flight> flight) {
+        List<Segment> segments = new ArrayList<>();
+        for (Flight fly : flight) {
+            for (int i = 0; i < fly.getSegments().size()-1; i++) {
+                if (!fly.getSegments().get(i).getArrivalDate().plusHours(2).isBefore(fly.getSegments().get(i + 1).getDepartureDate())) {
+                    if (!fly.getSegments().get(i).getArrivalDate().plusHours(2).isBefore(fly.getSegments().get(i + 1).getDepartureDate())) {
+                        if (!fly.getSegments().get(i).getDepartureDate().isBefore(LocalDateTime.now())) {
+                            segments.add(new Segment(fly.getSegments().get(i+1).getDepartureDate(), fly.getSegments().get(i).getArrivalDate()));
+                        }
+                    }
+                }
+            }
+        }
+        System.out.println("остальные рейсы");
         return new Flight(segments);
     }
 
