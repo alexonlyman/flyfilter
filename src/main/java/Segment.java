@@ -7,7 +7,7 @@ public class Segment {
 
     private final LocalDateTime arrivalDate;
 
-    Segment(final LocalDateTime dep, final LocalDateTime arr) {
+    Segment( LocalDateTime dep,LocalDateTime arr) {
         departureDate = Objects.requireNonNull(dep);
         arrivalDate = Objects.requireNonNull(arr);
     }

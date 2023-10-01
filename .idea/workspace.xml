@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95fd85a5-1fb6-44ca-ad2e-0f919a282bd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FlightBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Segment.java" afterDir="false" />
+    <list default="true" id="95fd85a5-1fb6-44ca-ad2e-0f919a282bd0" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Segment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,8 +71,20 @@
       <option name="presentableId" value="Default" />
       <updated>1695842531736</updated>
       <workItem from="1695842534393" duration="853000" />
-      <workItem from="1695887131111" duration="9948000" />
+      <workItem from="1695887131111" duration="16740000" />
+      <workItem from="1695972683546" duration="12634000" />
+      <workItem from="1696086971363" duration="13444000" />
+      <workItem from="1696143159265" duration="12407000" />
+      <workItem from="1696168508510" duration="12490000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1695903177727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695903177727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
